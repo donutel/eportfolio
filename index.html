@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawthar LAKHR — Portfolio BUT R&T Cybersécurité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+  <div class="nav-logo">KL</div>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#s3">SAE S3</a></li>
+    <li><a href="#s4">Alternance</a></li>
+    <li><a href="#reflexive">Analyses</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="menu">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="sphere-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-tag">BUT R&T · Parcours Cybersécurité · IUT Roanne</div>
+    <h1 class="hero-name">Kawthar<br><span>LAKHR</span></h1>
+    <p class="hero-sub">Étudiante en alternance &nbsp;·&nbsp; Orange &nbsp;·&nbsp; 2024 – 2026</p>
+    <div class="hero-actions">
+      <a href="#s3" class="btn-primary">Voir mon parcours</a>
+      <a href="cv.pdf" class="btn-ghost" download>Télécharger CV</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span></span>
+    <p>Défiler</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <span class="section-tag reveal">01 — À propos</span>
+    <h2 class="section-title reveal">Qui suis-je ?</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Étudiante en BUT Réseaux & Télécommunications parcours Cybersécurité à l'IUT de Roanne, en alternance chez Orange. Passionnée par la sécurité offensive et défensive, je pratique régulièrement les CTF et j'explore les systèmes à travers le pentesting.</p>
+        <p>Mon parcours couvre un spectre large : de la programmation embarquée IoT avec l'ESP32 au pentesting sur Kioptrix, en passant par la conception de réseaux sécurisés multi-sites et le déploiement de solutions professionnelles chez Orange (Stormshield, VPN SSL, Ucopia, OmniAccess).</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <span>4</span>
+          <p>SAÉ Semestre 3</p>
+        </div>
+        <div class="stat">
+          <span>3</span>
+          <p>Missions Alternance</p>
+        </div>
+        <div class="stat">
+          <span>∞</span>
+          <p>CTF &amp; curiosité</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences">
+  <div class="container">
+    <span class="section-tag reveal">02 — Compétences</span>
+    <h2 class="section-title reveal">Référentiel BUT2 Cyber</h2>
+    <div class="comp-grid reveal">
+      <div class="comp-card">
+        <div class="comp-icon">RT1</div>
+        <h3>Administrer les réseaux et l'Internet</h3>
+        <p>Routage dynamique OSPF, QoS, virtualisation VMware, déploiement de services réseaux avancés</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">RT2</div>
+        <h3>Connecter les entreprises et les usagers</h3>
+        <p>Transmissions complexes, accès distant sécurisé, VPN SSL, connexions multi-sites opérateurs</p>
+      </div>
+      <div class="comp-card">
+        <div class="comp-icon">RT3</div>
+        <h3>Créer des outils et applications</h3>
+        <p>Applications Android communicantes TCP/UDP, scripts, programmation embarquée ESP32, IoT</p>
+      </div>
+      <div class="comp-card highlight">
+        <div class="comp-icon">C1</div>
+        <h3>Administrer un SI sécurisé</h3>
+        <p>Bonnes pratiques cyber, pare-feu Stormshield SN210, filtrage URL/SSL/IPS, sécurisation des services</p>
+      </div>
+      <div class="comp-card highlight">
+        <div class="comp-icon">C2</div>
+        <h3>Surveiller un SI sécurisé</h3>
+        <p>Pentesting, outils Nmap &amp; Metasploit, tests de pénétration réseau/système, CTF</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAE S3 -->
+<section id="s3">
+  <div class="container">
+    <span class="section-tag reveal">03 — Semestre 3</span>
+    <h2 class="section-title reveal">SAÉ réalisées</h2>
+    <div class="sae-grid">
+
+      <div class="sae-card reveal">
+        <div class="sae-number">SAÉ 3.01</div>
+        <h3>Système de transmission LoRaWAN</h3>
+        <p>En binôme avec David, j'ai programmé un capteur ESP32 intégrant un module GPS, établi la connexion avec la passerelle LoRa du professeur, et relié le tout au cloud (The Things Network) pour la remontée et visualisation des données.</p>
+        <div class="sae-tags">
+          <span>ESP32</span><span>LoRaWAN</span><span>GPS</span><span>TTN</span><span>C++</span><span>IoT</span>
+        </div>
+        <div class="ac-eval">
+          <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+          <div class="ac-item"><span class="ac-code">AC22.01</span><span class="ac-desc">Déployer et caractériser des systèmes de transmissions complexes</span><span class="ac-dots l3">●●●○</span></div>
+          <div class="ac-item"><span class="ac-code">AC23.03</span><span class="ac-desc">Utiliser un protocole réseau pour programmer une application</span><span class="ac-dots l2">●●○○</span></div>
+        </div>
+        <a href="https://docs.google.com/document/d/1MgUUfvUFqw0H5hj0KURrQHrVmB_AgpHxInJs1cFbogM/edit" class="proof-btn" target="_blank" rel="noopener">Voir le compte-rendu →</a>
+      </div>
+
+      <div class="sae-card reveal">
+        <div class="sae-number">SAÉ 3.02</div>
+        <h3>Application communicante Android</h3>
+        <p>Développement d'une application mobile native Java capable de basculer dynamiquement entre rôle Client et Serveur sur un réseau Wi-Fi local, supportant TCP et UDP avec architecture multithreadée (NetworkData, NetworkManager, MainActivity).</p>
+        <div class="sae-tags">
+          <span>Android</span><span>Java</span><span>TCP/UDP</span><span>Sockets</span><span>Multithreading</span>
+        </div>
+        <div class="ac-eval">
+          <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+          <div class="ac-item"><span class="ac-code">AC23.02</span><span class="ac-desc">Développer une application à partir d'un cahier des charges (web/mobile)</span><span class="ac-dots l3">●●●○</span></div>
+          <div class="ac-item"><span class="ac-code">AC23.03</span><span class="ac-desc">Utiliser un protocole réseau pour programmer une application client/serveur</span><span class="ac-dots l3">●●●○</span></div>
+        </div>
+        <a href="https://drive.google.com/file/d/1pcZlFTsjDrdSSnRKjPv4AQwuVcnngjKK/view" class="proof-btn" target="_blank" rel="noopener">Voir le compte-rendu →</a>
+      </div>
+
+      <div class="sae-card reveal">
+        <div class="sae-number">SAÉ Cyber.03</div>
+        <h3>Réseau informatique sécurisé multi-sites</h3>
+        <p>Configuration OSPFv2 sur routeurs Cisco R1 et R2, encapsulation 802.1Q VLAN 34. Déploiement de VMs sur VMware vCenter : deux serveurs Windows Server 2016 (DNS primaire/secondaire) et un client Windows 10 en provisionnement dynamique.</p>
+        <div class="sae-tags">
+          <span>OSPFv2</span><span>Cisco</span><span>VMware vCenter</span><span>VLAN 802.1Q</span><span>DNS</span>
+        </div>
+        <div class="ac-eval">
+          <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+          <div class="ac-item"><span class="ac-code">AC21.01</span><span class="ac-desc">Configurer et dépanner le routage dynamique dans un réseau</span><span class="ac-dots l3">●●●○</span></div>
+          <div class="ac-item"><span class="ac-code">AC21.03</span><span class="ac-desc">Déployer des postes clients et des solutions virtualisées</span><span class="ac-dots l2">●●○○</span></div>
+          <div class="ac-item"><span class="ac-code">AC24.02Cyber</span><span class="ac-desc">Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure</span><span class="ac-dots l2">●●○○</span></div>
+        </div>
+        <a href="https://docs.google.com/presentation/d/1scPNW1UbaVOFlgaOZoaNdR2JIejEyPu36t73jNDUKeI/edit" class="proof-btn" target="_blank" rel="noopener">Voir la présentation →</a>
+      </div>
+
+      <div class="sae-card reveal">
+        <div class="sae-number">SAÉ Cyber.04</div>
+        <h3>Découverte du pentesting</h3>
+        <p>Pentest guidé sur Kioptrix Level 1. Reconnaissance Nmap, exploitation de vulnérabilités Samba/OpenSSL via Metasploit, post-exploitation et tentatives d'escalade de privilèges Linux. Pratique en lien avec ma passion pour les CTF.</p>
+        <div class="sae-tags">
+          <span>Nmap</span><span>Metasploit</span><span>Kioptrix</span><span>CVE</span><span>Linux</span><span>CTF</span>
+        </div>
+        <div class="ac-eval">
+          <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+          <div class="ac-item"><span class="ac-code">AC24.05Cyber</span><span class="ac-desc">Connaître les différents types d'attaque</span><span class="ac-dots l3">●●●○</span></div>
+          <div class="ac-item"><span class="ac-code">AC25.02Cyber</span><span class="ac-desc">Prendre en main des outils de test de pénétration réseau/système</span><span class="ac-dots l2">●●○○</span></div>
+        </div>
+        <a href="https://docs.google.com/document/d/199v1qNuhmFC2SvMIWxR_UzS3ZtVlNhPXGb7gKA8yLvY/edit" class="proof-btn" target="_blank" rel="noopener">Voir le compte-rendu →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ALTERNANCE S4 -->
+<section id="s4">
+  <div class="container">
+    <span class="section-tag reveal">04 — Semestre 4</span>
+    <h2 class="section-title reveal">Alternance — Orange</h2>
+    <p class="alt-intro reveal">En alternance chez <strong>Orange</strong>, j'ai déployé et administré des solutions de sécurité réseau professionnelles en environnement de production, sur des équipements Stormshield, Alcatel-Lucent et Cisco.</p>
+
+    <div class="mission-list">
+
+      <div class="mission-card reveal">
+        <div class="mission-num">01</div>
+        <div class="mission-content">
+          <h3>Segmentation VLAN &amp; Filtrage Stormshield SN210</h3>
+          <p>Configuration du switch Alcatel avec VLAN 101 (employés) et VLAN 102 (visiteurs). Création de profils de filtrage URL (URLFilter_00) et SSL (SSLFilter_00) sur le pare-feu Stormshield SN210 — blocage des catégories à risque, bypass des sites bancaires/santé. Diagnostic et résolution d'un blocage ALPN causé par l'IPS en dupliquant le profil IPS_02.</p>
+          <div class="sae-tags">
+            <span>Stormshield SN210</span><span>VLAN 802.1Q</span><span>IPS</span><span>Filtrage URL/SSL</span><span>ALPN</span>
+          </div>
+          <div class="ac-eval">
+            <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+            <div class="ac-item"><span class="ac-code">AC21.02</span><span class="ac-desc">Configurer une politique de QoS et les fonctions de sécurité réseau</span><span class="ac-dots l4">●●●●</span></div>
+            <div class="ac-item"><span class="ac-code">AC24.02Cyber</span><span class="ac-desc">Mettre en œuvre les outils fondamentaux de sécurisation d'infrastructure</span><span class="ac-dots l4">●●●●</span></div>
+            <div class="ac-item"><span class="ac-code">AC24.03Cyber</span><span class="ac-desc">Sécuriser les services</span><span class="ac-dots l3">●●●○</span></div>
+          </div>
+          <a href="https://drive.google.com/file/d/1WrLaNLIoHCAvO5vNbSrOe1elIvndGDdA/view" class="proof-btn" target="_blank" rel="noopener">Rapport Stormshield →</a>
+        </div>
+      </div>
+
+      <div class="mission-card reveal">
+        <div class="mission-num">02</div>
+        <div class="mission-content">
+          <h3>VPN SSL, Portail captif Ucopia &amp; Wi-Fi OmniAccess Stellar</h3>
+          <p>Déploiement d'un VPN SSL avec authentification LDAP sur port 10443 (Stormshield). Mise en place du portail captif Ucopia pour visiteurs avec traçabilité légale. Configuration de deux SSID Wi-Fi (Employés WPA2 VLAN 101 / Visiteurs VLAN 102) sur AP OmniAccess Stellar. Résolution d'un problème NAT côté DMZ via analyse croisée des logs Ucopia/Stormshield.</p>
+          <div class="sae-tags">
+            <span>VPN SSL</span><span>LDAP</span><span>Ucopia</span><span>Portail captif</span><span>WPA2</span><span>OmniAccess</span>
+          </div>
+          <div class="ac-eval">
+            <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+            <div class="ac-item"><span class="ac-code">AC21.04</span><span class="ac-desc">Déployer des services réseaux avancés</span><span class="ac-dots l4">●●●●</span></div>
+            <div class="ac-item"><span class="ac-code">AC22.02</span><span class="ac-desc">Mettre en place un accès distant sécurisé</span><span class="ac-dots l4">●●●●</span></div>
+            <div class="ac-item"><span class="ac-code">AC24.03Cyber</span><span class="ac-desc">Sécuriser les services</span><span class="ac-dots l3">●●●○</span></div>
+          </div>
+          <a href="https://docs.google.com/document/d/1svvUfT70StDPtJuL5X6WfSHS12Dj7sIV_sPZ6Tc7O9M/edit" class="proof-btn" target="_blank" rel="noopener">Rapport d'alternance →</a>
+        </div>
+      </div>
+
+      <div class="mission-card reveal">
+        <div class="mission-num">03</div>
+        <div class="mission-content">
+          <h3>Routage dynamique OSPFv2 — Cisco R1 &amp; R2</h3>
+          <p>Configuration OSPFv2 sur deux routeurs Cisco (R1 et R2) en environnement Orange pour assurer la connectivité du réseau collaborateur (172.32.94.0/24). R2 en sous-interface avec encapsulation 802.1Q VLAN 34. Débogage avec show ip ospf neighbor et show ip route ospf en conditions de production.</p>
+          <div class="sae-tags">
+            <span>OSPFv2</span><span>Cisco IOS</span><span>802.1Q</span><span>Sous-interfaces</span><span>Routage dynamique</span>
+          </div>
+          <div class="ac-eval">
+            <p class="ac-eval-title">Apprentissages critiques travaillés</p>
+            <div class="ac-item"><span class="ac-code">AC21.01</span><span class="ac-desc">Configurer et dépanner le routage dynamique dans un réseau</span><span class="ac-dots l4">●●●●</span></div>
+            <div class="ac-item"><span class="ac-code">AC22.03</span><span class="ac-desc">Mettre en place une connexion multi-site via réseau opérateur</span><span class="ac-dots l3">●●●○</span></div>
+          </div>
+          <a href="https://docs.google.com/document/d/1svvUfT70StDPtJuL5X6WfSHS12Dj7sIV_sPZ6Tc7O9M/edit" class="proof-btn" target="_blank" rel="noopener">Rapport d'alternance →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ANALYSES REFLEXIVES -->
+<section id="reflexive">
+  <div class="container">
+    <span class="section-tag reveal">05 — Analyses réflexives</span>
+    <h2 class="section-title reveal">Modèle de Gibbs</h2>
+    <p class="gibbs-intro reveal">Démarche réflexive en 6 étapes : ① Description &nbsp;→&nbsp; ② Sentiments &nbsp;→&nbsp; ③ Évaluation &nbsp;→&nbsp; ④ Analyse &nbsp;→&nbsp; ⑤ Conclusion &nbsp;→&nbsp; ⑥ Plan d'action</p>
+
+    <!-- SAE3.01 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">SAÉ 3.01</span>
+        <h3>LoRaWAN — Système de transmission ESP32</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>En binôme avec David, j'ai pris en charge la programmation du capteur ESP32 dans le cadre de la SAÉ LoRaWAN. Ma mission : programmer le capteur en C++ (Arduino Framework), intégrer un module GPS (NMEA / trame $GPGGA), établir la connectivité avec la passerelle LoRa du professeur via le protocole LoRaWAN (OTAA), et relier l'ensemble au cloud The Things Network (TTN) pour la visualisation des données géolocalisées.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>J'ai abordé ce projet avec beaucoup de motivation. La dimension IoT et programmation embarquée m'a particulièrement stimulée. Même face aux obstacles initiaux de connectivité avec la passerelle, j'ai maintenu un état d'esprit positif et orienté solution.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>La principale difficulté a été la connexion initiale avec la passerelle LoRa (configuration OTAA, paramètres de fréquences 868 MHz, Spreading Factor). Une fois ce problème résolu, la chaîne complète ESP32 → passerelle → TTN a parfaitement fonctionné. La détection GPS et la remontée de données se sont déroulées sans encombre.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>J'ai mobilisé des connaissances en protocole LoRaWAN (OTAA/ABP, Spreading Factor, bande ISM 868 MHz), programmation C++ pour microcontrôleurs (Arduino Framework ESP32), protocoles IoT (MQTT via TTN) et gestion de modules GPS (trames NMEA, parsing $GPGGA).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Cette SAÉ m'a permis de valider des compétences en programmation embarquée et en protocoles LPWAN. J'ai acquis une méthodologie de débogage sur systèmes contraints (pas d'affichage, debug via Serial). Si c'était à refaire, j'aurais développé une application mobile pour visualiser la localisation GPS en temps réel plutôt qu'une interface web statique.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Développer une application mobile Android/Flutter connectée via MQTT pour afficher la position GPS de l'ESP32 en temps réel sur une carte (Leaflet / Google Maps). Explorer les protocoles alternatifs LPWAN (Sigfox, NB-IoT) pour comparer les cas d'usage en termes de débit, portée et consommation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAE3.02 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">SAÉ 3.02</span>
+        <h3>Application Android communicante — TCP/UDP</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>Développement d'une application Android native en Java capable de basculer dynamiquement entre rôle Client et rôle Serveur sur un réseau Wi-Fi local. L'application supporte TCP et UDP et échange des structures de données complexes grâce à une architecture multithreadée structurée en trois composants : NetworkData.java (structure de données), NetworkManager.java (moteur réseau), MainActivity.java (interface et contrôle).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>J'ai vraiment apprécié ce projet. Le défi de combiner la programmation Android et les protocoles réseau m'a pleinement stimulée. C'est un projet qui m'a permis de mettre en pratique à la fois mes compétences réseau et mes compétences en développement logiciel.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>L'application fonctionne de manière satisfaisante : la communication bidirectionnelle TCP/UDP est opérationnelle et l'interface reste fluide grâce au multithreading (isolation des opérations réseau hors de l'UI Thread). Les tests sur localhost avec Hercules ont validé le bon fonctionnement des deux protocoles, aussi bien côté émission que réception.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>Mobilisation des connaissances en sockets Java (ServerSocket TCP, DatagramSocket UDP), architecture Android (contrainte UI Thread, StrictMode), pattern MVC appliqué aux couches réseau, sérialisation d'objets, et déclaration des permissions Android (android.permission.INTERNET dans le Manifest).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Ce projet m'a permis de consolider mes compétences en développement d'applications communicantes et de mieux comprendre l'articulation entre couche transport et couche application. Le résultat est fonctionnel et répond intégralement au cahier des charges. Rien à changer fondamentalement sur cette approche.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Explorer des architectures modernes : WebSockets pour la communication temps-réel, gRPC pour les échanges structurés performants, ou Retrofit pour les API REST. Migrer vers Kotlin comme langage Android natif pour des projets futurs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAE3.Cyber.03 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">SAÉ Cyber.03</span>
+        <h3>Réseau sécurisé multi-sites — OSPF &amp; VMware vCenter</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>Configuration du protocole OSPFv2 sur deux routeurs Cisco (R1 et R2) pour assurer la connectivité entre le réseau collaborateur (172.32.94.0/24) et le switch enseignant. R2 utilisait une sous-interface avec encapsulation 802.1Q pour le VLAN 34. Déploiement parallèle de VMs sur VMware vCenter (clusters esx6-8) : deux Windows Server 2016 (DNS primaire/secondaire) et un client Windows 10 en provisionnement dynamique sur un datastore de 150 Go.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>Satisfaite d'avoir réussi la convergence OSPF après plusieurs itérations. Déstabilisée au départ par la syntaxe des masques inverses et l'interface vCenter que je découvrais pour la première fois. Intimidée par la gestion des ressources partagées entre étudiants sur l'infrastructure VMware de l'IUT.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>Convergence OSPF atteinte avec succès — vérifiée via <code>show ip ospf neighbor</code> et <code>show ip route ospf</code>. La principale difficulté : la configuration précise de l'encapsulation dot1q sur la sous-interface R2 et les annonces correctes des réseaux en zone 0. Côté VMware, la gestion de l'espace disque limité a contraint à respecter strictement les règles de nommage.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>Mobilisation des connaissances OSPF (zones, processus, masques inverses, LSA type 1/2), sous-interfaces Cisco 802.1Q, commandes de vérification IOS. Côté VMware : vCenter, modèles de VM, provisionnement dynamique vs statique, gestion des datastores partagés, Windows Server 2016 (rôle DNS).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Compris le fonctionnement des protocoles à état de liens (LSA flooding, convergence, DR/BDR). La commande <code>show ip ospf neighbor</code> est la clé du débogage OSPF. Appris la valeur du provisionnement dynamique VMware pour optimiser l'espace et accélérer les déploiements répétitifs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Pratiquer OSPF multi-zones et la redistribution entre protocoles (OSPF ↔ EIGRP) sur GNS3/EVE-NG. Explorer Docker et Proxmox comme alternatives open-source à VMware. Approfondir OSPFv3 pour IPv6 et les mécanismes d'authentification MD5/SHA entre voisins OSPF.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAE3.Cyber.04 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">SAÉ Cyber.04</span>
+        <h3>Pentesting guidé — Kioptrix Level 1</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>Pentest guidé sur la machine virtuelle Kioptrix Level 1. Déroulement complet : reconnaissance passive et active (Nmap, détection de services), identification de vulnérabilités (Samba CVE-2003-0201, OpenSSL/mod_ssl CVE-2002-0082), exploitation via Metasploit, phase de post-exploitation et tentatives d'escalade de privilèges sur le système Linux cible.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>À l'aise dans cet environnement grâce à ma pratique régulière des CTF. Stimulée par le défi technique à chaque étape. L'escalade de privilèges a représenté le vrai challenge intellectuel — là où ça devient réellement intéressant.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>Les phases de reconnaissance et d'exploitation des vulnérabilités connues ont bien fonctionné grâce à la méthodologie. L'escalade de privilèges a été la partie la plus complexe — c'est clairement la compétence à renforcer, car elle exige une connaissance fine des mécanismes internes du système.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>Application de la méthodologie pentest standard : reconnaissance → scan de ports (Nmap -sV -A) → identification de services vulnérables → exploitation (Metasploit Framework, modules trans2open et OpenFuck) → post-exploitation. Connaissance des CVE courants sur systèmes Linux legacy et des vecteurs d'escalade (SUID, cron, kernel exploits).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Cette SAÉ a confirmé mon intérêt pour la cybersécurité offensive. Elle m'a appris à structurer une attaque selon une méthodologie reproductible plutôt que de procéder par essai-erreur. La phase d'escalade de privilèges reste la compétence la plus exigeante — elle demande une vraie maîtrise des internals Linux.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Approfondir les techniques d'escalade de privilèges Linux (SUID abuse, cron exploitation, kernel exploits, capabilities) via HackTheBox et TryHackMe. Préparer une certification en pentest (eJPT ou PNPT). Pratiquer d'autres machines VulnHub similaires (Kioptrix 2, Stapler déjà présent dans mes fichiers).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alternance Mission 1 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">Alternance · Mission 1</span>
+        <h3>Stormshield SN210 — Segmentation VLAN &amp; Filtrage IPS</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>Chez Orange, configuration du switch Alcatel avec deux VLAN (101 employés, 102 visiteurs) et création de profils de filtrage URL (URLFilter_00) et SSL (SSLFilter_00) sur le pare-feu Stormshield SN210 — blocage des catégories à risque, bypass des sites bancaires/santé. Diagnostic et résolution d'un blocage inattendu ALPN causé par l'IPS : passage de la règle en mode FW pour isoler l'origine, puis duplication du profil IPS (IPS_02) pour autoriser ce protocole spécifiquement.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>Satisfaite de voir la segmentation fonctionner opérationnellement. Stressée lors du blocage ALPN car il fallait diagnostiquer rapidement sans interrompre le service client en production — une contrainte que l'on ne ressent pas en TP.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>La segmentation VLAN et le filtrage URL/SSL ont bien fonctionné dès le déploiement. Le blocage ALPN a nécessité une analyse méthodique des logs et la compréhension du comportement de l'IPS en inspection protocolaire — plus complexe que prévu en environnement de production.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>Mobilisation des connaissances VLAN 802.1Q, filtrage stateful, inspection protocolaire IPS, protocoles applicatifs (ALPN — Application-Layer Protocol Negotiation utilisé par HTTP/2 et QUIC), et lecture de documentation Stormshield en anglais. Distinction fondamentale apprise : filtrage pare-feu (couche 4) vs inspection IPS (couche 7).</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Compris la différence critique entre filtrage stateful et inspection protocolaire IPS. La méthode de débogage "passer l'IPS en mode FW pour isoler l'origine du blocage, puis affiner le profil" est une technique réutilisable. En production, la pression de temps change radicalement l'approche de résolution de problèmes.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Approfondir les politiques QoS (shaping, policing) sur Stormshield. Explorer FortiGate comme alternative pour comparer les approches. Simuler des configurations IPS avancées sur EVE-NG. Étudier les protocoles QUIC et HTTP/3 qui challengent les inspections IPS classiques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alternance Mission 2 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">Alternance · Mission 2</span>
+        <h3>VPN SSL, Portail captif Ucopia &amp; Wi-Fi OmniAccess</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>Déploiement chez Orange de trois services réseau avancés interconnectés : VPN SSL avec authentification LDAP sur port 10443 (Stormshield), portail captif Ucopia pour visiteurs avec traçabilité légale obligatoire, et deux SSID Wi-Fi (Employés WPA2-PSK VLAN 101 / Visiteurs VLAN 102) sur AP Alcatel-Lucent OmniAccess Stellar. Résolution d'un problème de NAT manquant côté DMZ pour les visiteurs, identifié par analyse croisée des logs Ucopia et Stormshield.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>Passionnée par la complexité de cette mission multi-composants. Très satisfaite lorsque le portail captif a fonctionné et que les premiers visiteurs ont pu s'authentifier et naviguer — valider quelque chose qui sera utilisé en production tous les jours procure une satisfaction particulière.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>VPN SSL et portail captif pleinement fonctionnels après correction. Difficulté principale : l'absence de règle NAT côté DMZ pour les visiteurs n'était pas visible sans analyser les logs côté Ucopia ET côté Stormshield simultanément. Le split tunneling du VPN SSL a nécessité une compréhension fine du routage côté client VPN.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>Mobilisation des connaissances VPN SSL (split tunneling, authentification LDAP, certificats), portail captif (traçabilité légale LCEN, DHCP dédié par VLAN), Wi-Fi entreprise (WPA2-PSK vs WPA2-Enterprise, SSID/BSSID), configuration AP OmniAccess Stellar et méthodologie de débogage multi-logs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Cette mission m'a appris à diagnostiquer des problèmes sur des architectures multi-couches en croisant plusieurs sources de logs. La rigueur sur les règles NAT est absolument critique en environnement DMZ. En production, une règle manquante peut bloquer des utilisateurs réels — l'enjeu n'est pas le même qu'en TP.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Explorer WPA3 et le standard 802.1X (authentification par certificat) pour le Wi-Fi entreprise. Approfondir la gestion d'identité avec un serveur RADIUS (FreeRADIUS) intégré à l'Active Directory. Étudier les architectures Zero Trust Network Access (ZTNA) comme évolution du VPN SSL classique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alternance Mission 3 -->
+    <div class="accordion reveal">
+      <div class="accordion-header">
+        <span class="acc-tag">Alternance · Mission 3</span>
+        <h3>Routage dynamique OSPFv2 — Cisco R1 &amp; R2</h3>
+        <span class="acc-arrow">↓</span>
+      </div>
+      <div class="accordion-body">
+        <div class="gibbs-steps">
+          <div class="step">
+            <span class="step-num">①</span>
+            <div>
+              <h4>Description</h4>
+              <p>Configuration du protocole OSPFv2 sur deux routeurs Cisco (R1 et R2) en environnement Orange pour assurer la connectivité du réseau collaborateur (172.32.94.0/24) avec le réseau de l'entreprise. R2 configuré avec une sous-interface et encapsulation 802.1Q pour le VLAN 34. Mission réalisée en conditions de production, avec contrainte de disponibilité de service.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">②</span>
+            <div>
+              <h4>Sentiments</h4>
+              <p>Satisfaite d'appliquer des compétences acquises à l'IUT dans un environnement professionnel réel. Légèrement déstabilisée par la syntaxe des masques inverses et la configuration des sous-interfaces VLAN sur routeur Cisco en conditions de production — où l'erreur a des conséquences immédiates.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">③</span>
+            <div>
+              <h4>Évaluation</h4>
+              <p>La convergence OSPF a été atteinte avec succès. La principale difficulté : la configuration précise de l'encapsulation dot1q sur la sous-interface de R2 et les annonces correctes des réseaux dans la zone 0, le tout en environnement de production avec une tolérance aux pannes quasi nulle.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">④</span>
+            <div>
+              <h4>Analyse</h4>
+              <p>Application des connaissances OSPF (zones, processus, masques inverses, annonces réseau), sous-interfaces Cisco 802.1Q et commandes de vérification (show ip ospf neighbor, show ip route ospf, debug ip ospf events) dans un contexte où chaque commande doit être réfléchie avant exécution.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑤</span>
+            <div>
+              <h4>Conclusion</h4>
+              <p>Configurer OSPF en production diffère fondamentalement du labo : la tolérance aux erreurs est quasi nulle et l'impact est immédiat sur les utilisateurs. La maîtrise des masques inverses est non négociable. Le réflexe "vérifier avant de valider" est une compétence professionnelle à part entière.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">⑥</span>
+            <div>
+              <h4>Plan d'action</h4>
+              <p>Pratiquer OSPF multi-zones et la redistribution entre protocoles (OSPF ↔ EIGRP/BGP) sur GNS3. Approfondir OSPFv3 pour IPv6 et les mécanismes d'authentification des voisins (MD5/SHA). Explorer les architectures SD-WAN qui s'appuient sur OSPF comme protocole de routage sous-jacent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONCLUSION GENERALE -->
+<section id="conclusion">
+  <div class="container">
+    <span class="section-tag reveal">06 — Bilan global</span>
+    <h2 class="section-title reveal">Conclusion générale</h2>
+
+    <h3 class="sub-title reveal">Auto-évaluation des compétences BUT2 Cyber</h3>
+    <div class="conclusion-grid reveal">
+      <div class="comp-bilan">
+        <div class="comp-bilan-code">RT1</div>
+        <h4>Administrer les réseaux et l'Internet</h4>
+        <div class="comp-bilan-level">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div>
+        </div>
+        <p>Acquis — OSPF, VMware vCenter, services réseau avancés maîtrisés en TP et en production.</p>
+      </div>
+      <div class="comp-bilan">
+        <div class="comp-bilan-code">RT2</div>
+        <h4>Connecter les entreprises et les usagers</h4>
+        <div class="comp-bilan-level">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div>
+        </div>
+        <p>Maîtrisé — VPN SSL, LoRaWAN, Wi-Fi entreprise et portail captif déployés chez Orange.</p>
+      </div>
+      <div class="comp-bilan">
+        <div class="comp-bilan-code">RT3</div>
+        <h4>Créer des outils et applications</h4>
+        <div class="comp-bilan-level">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div>
+        </div>
+        <p>Acquis — App Android TCP/UDP fonctionnelle. À approfondir : Kotlin, WebSockets, gRPC.</p>
+      </div>
+      <div class="comp-bilan highlight">
+        <div class="comp-bilan-code">C1</div>
+        <h4>Administrer un SI sécurisé</h4>
+        <div class="comp-bilan-level">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div>
+        </div>
+        <p>Maîtrisé — Stormshield SN210, VLAN, IPS/URL/SSL configurés et debuggés en production.</p>
+      </div>
+      <div class="comp-bilan highlight">
+        <div class="comp-bilan-code">C2</div>
+        <h4>Surveiller un SI sécurisé</h4>
+        <div class="comp-bilan-level">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div>
+        </div>
+        <p>En cours — Pentesting Kioptrix réalisé. Escalade de privilèges à approfondir via CTF/HTB.</p>
+      </div>
+    </div>
+
+    <div class="global-gibbs">
+      <h3 class="sub-title reveal">Analyse réflexive globale — S3 + Alternance S4</h3>
+      <div class="gibbs-steps reveal">
+        <div class="step">
+          <span class="step-num">①</span>
+          <div>
+            <h4>Description</h4>
+            <p>L'année BUT2 m'a conduite à réaliser quatre SAÉ en S3 — IoT (LoRaWAN/ESP32), développement Android communicant, réseaux sécurisés multi-sites et découverte du pentesting — et à intégrer une équipe chez Orange en alternance (septembre 2025 – juin 2026), où j'ai déployé des solutions de sécurité réseau en conditions réelles sur des équipements Stormshield, Alcatel et Cisco.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">②</span>
+          <div>
+            <h4>Sentiments</h4>
+            <p>Année riche en contrastes : enthousiasme face aux SAÉ IoT et pentesting qui alimentent ma passion des systèmes, satisfaction profonde lors des premiers déploiements réussis chez Orange, et quelques moments d'inconfort face à la complexité en production (masques inverses OSPF, blocage ALPN en service). La pression de la production m'a appris à gérer le stress très différemment d'un TP.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">③</span>
+          <div>
+            <h4>Évaluation</h4>
+            <p>Les compétences Cyber1 et RT2 ont été particulièrement bien développées grâce à l'alternance — ce sont les points forts de mon profil. La compétence Cyber2 (surveillance, pentesting) reste à approfondir et constitue mon chantier principal pour BUT3. La SAÉ Android a révélé un intérêt pour le développement réseau que je n'avais pas anticipé.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">④</span>
+          <div>
+            <h4>Analyse</h4>
+            <p>L'alternance a été le facteur d'accélération le plus significatif : configurer un Stormshield en production avec des utilisateurs réels derrière n'est pas comparable à un TP. Les SAÉ ont fourni le socle théorique, l'alternance l'a ancré dans la réalité professionnelle. Ma pratique régulière des CTF a contribué à ma compétence en sécurité offensive indépendamment du cursus formel.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">⑤</span>
+          <div>
+            <h4>Conclusion</h4>
+            <p>Je retiens que la cybersécurité exige une pratique régulière et continue — CTF, labs et environnements de production sont complémentaires et non substituables. J'ai confirmé mon orientation vers la sécurité offensive et défensive, avec une préférence pour les missions techniques de terrain. L'alternance m'a aussi révélé la valeur de la communication technique dans une équipe professionnelle.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">⑥</span>
+          <div>
+            <h4>Plan d'action</h4>
+            <p>Préparer une certification offensive (eJPT ou PNPT) en BUT3. Approfondir l'escalade de privilèges Linux via HackTheBox. Explorer les architectures Zero Trust Network Access (ZTNA) et SD-WAN. Continuer les CTF pour maintenir les réflexes offensifs. Envisager une spécialisation SOC/pentest en poursuite d'études.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <span class="section-tag reveal">07 — Contact</span>
+    <h2 class="section-title reveal">Me contacter</h2>
+    <div class="contact-block reveal">
+      <a href="mailto:lakhrkawthar@gmail.com" class="contact-email">lakhrkawthar@gmail.com</a>
+      <p class="contact-sub">IUT de Roanne &nbsp;·&nbsp; BUT R&T Cybersécurité &nbsp;·&nbsp; Promo 2024–2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Kawthar LAKHR &nbsp;·&nbsp; Portfolio BUT R&T Cybersécurité &nbsp;·&nbsp; 2026</p>
+</footer>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
