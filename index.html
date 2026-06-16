@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kawthar LAKHR — Portfolio BUT R&T Cybersécurité</title>
+  <title>Kawtar LAKHR — Portfolio BUT R&T Cybersécurité</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <div class="nav-logo">KL</div>
   <ul class="nav-links">
     <li><a href="#about">À propos</a></li>
-    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#tableau-ac">Compétences AC</a></li>
     <li><a href="#s3">SAE S3</a></li>
     <li><a href="#s4">Alternance</a></li>
     <li><a href="#reflexive">Analyses</a></li>
@@ -27,14 +27,15 @@
 
 <!-- HERO -->
 <section id="hero">
+  <canvas id="shader-canvas"></canvas>
   <canvas id="sphere-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-tag">BUT R&T · Parcours Cybersécurité · IUT Roanne</div>
-    <h1 class="hero-name">Kawthar<br><span>LAKHR</span></h1>
+    <h1 class="hero-name">Kawtar<br><span>LAKHR</span></h1>
     <p class="hero-sub">Étudiante en alternance &nbsp;·&nbsp; Orange &nbsp;·&nbsp; 2024 – 2026</p>
     <div class="hero-actions">
       <a href="#s3" class="btn-primary">Voir mon parcours</a>
-      <a href="cv.pdf" class="btn-ghost" download>Télécharger CV</a>
+      <a href="https://docs.google.com/document/d/1Ax_fjLUR98ASaUi3cLvBKjZlGbcrHi8fpxKIY-gw6ks/view" class="btn-ghost" target="_blank" rel="noopener">Télécharger CV</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -53,56 +54,252 @@
         <p>Étudiante en BUT Réseaux & Télécommunications parcours Cybersécurité à l'IUT de Roanne, en alternance chez Orange. Passionnée par la sécurité offensive et défensive, je pratique régulièrement les CTF et j'explore les systèmes à travers le pentesting.</p>
         <p>Mon parcours couvre un spectre large : de la programmation embarquée IoT avec l'ESP32 au pentesting sur Kioptrix, en passant par la conception de réseaux sécurisés multi-sites et le déploiement de solutions professionnelles chez Orange (Stormshield, VPN SSL, Ucopia, OmniAccess).</p>
       </div>
-      <div class="about-stats reveal">
-        <div class="stat">
-          <span>4</span>
-          <p>SAÉ Semestre 3</p>
-        </div>
-        <div class="stat">
-          <span>3</span>
-          <p>Missions Alternance</p>
-        </div>
-        <div class="stat">
-          <span>∞</span>
-          <p>CTF &amp; curiosité</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- COMPETENCES -->
-<section id="competences">
+<!-- TABLEAU COMPLET DES COMPÉTENCES AC -->
+<section id="tableau-ac">
   <div class="container">
-    <span class="section-tag reveal">02 — Compétences</span>
-    <h2 class="section-title reveal">Référentiel BUT2 Cyber</h2>
-    <div class="comp-grid reveal">
-      <div class="comp-card">
-        <div class="comp-icon">RT1</div>
-        <h3>Administrer les réseaux et l'Internet</h3>
-        <p>Routage dynamique OSPF, QoS, virtualisation VMware, déploiement de services réseaux avancés</p>
+    <span class="section-tag reveal">02 — Portfolio complet</span>
+    <h2 class="section-title reveal">Tableau de bord — Compétences BUT R&T Cyber</h2>
+    <div class="ac-header-row reveal">
+      <p>Référentiel complet des 24 apprentissages critiques S3–S4.<br>
+        <span class="badge-c-inline">C</span> = Formation IUT &nbsp;·&nbsp;
+        <span class="badge-e-inline">E</span> = Alternance Orange</p>
+      <a href="https://docs.google.com/spreadsheets/d/1TFLt2Rq0wPU-qtUiLvO_MljhKIhcUti8QRW3U52zCCw/edit?usp=sharing" class="proof-btn" target="_blank" rel="noopener">Portfolio Excel complet →</a>
+    </div>
+
+    <div class="ac-filters reveal">
+      <button class="filter-btn active" data-filter="all">Toutes (24)</button>
+      <button class="filter-btn" data-filter="cours">Formation IUT</button>
+      <button class="filter-btn" data-filter="entreprise">Alternance Orange</button>
+      <button class="filter-btn" data-filter="both">Cours + Alternance</button>
+    </div>
+
+    <!-- RT1 -->
+    <div class="ac-bloc reveal">
+      <div class="ac-bloc-header">
+        <span class="bloc-badge rt">RT1</span>
+        <div><h3>Administrer les réseaux et l'Internet</h3><span class="bloc-subtitle">Niveau 2 — Administrer un réseau</span></div>
+        <div class="bloc-score"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><span>3/4</span></div>
       </div>
-      <div class="comp-card">
-        <div class="comp-icon">RT2</div>
-        <h3>Connecter les entreprises et les usagers</h3>
-        <p>Transmissions complexes, accès distant sécurisé, VPN SSL, connexions multi-sites opérateurs</p>
-      </div>
-      <div class="comp-card">
-        <div class="comp-icon">RT3</div>
-        <h3>Créer des outils et applications</h3>
-        <p>Applications Android communicantes TCP/UDP, scripts, programmation embarquée ESP32, IoT</p>
-      </div>
-      <div class="comp-card highlight">
-        <div class="comp-icon">C1</div>
-        <h3>Administrer un SI sécurisé</h3>
-        <p>Bonnes pratiques cyber, pare-feu Stormshield SN210, filtrage URL/SSL/IPS, sécurisation des services</p>
-      </div>
-      <div class="comp-card highlight">
-        <div class="comp-icon">C2</div>
-        <h3>Surveiller un SI sécurisé</h3>
-        <p>Pentesting, outils Nmap &amp; Metasploit, tests de pénétration réseau/système, CTF</p>
+      <div class="ac-list">
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC21.01</span>
+          <span class="ac-title-text">Configurer et dépanner le routage dynamique dans un réseau</span>
+          <span class="ac-ctx-text">SAÉ Cyber.03 — OSPFv2, Cisco R1/R2, VLAN 34, 802.1Q</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC21.02</span>
+          <span class="ac-title-text">Configurer une politique de QoS et les fonctions de sécurité de base</span>
+          <span class="ac-ctx-text">Orange — Stormshield SN210, VLAN 101/102, filtrage URL/SSL, IPS</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC21.03</span>
+          <span class="ac-title-text">Déployer des postes clients et des solutions virtualisées</span>
+          <span class="ac-ctx-text">SAÉ Cyber.03 — VMware vCenter, Windows Server 2016 ×2, Windows 10</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row justified" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC21.04</span>
+          <span class="ac-title-text">Déployer des services réseaux avancés en entreprise</span>
+          <span class="ac-ctx-text">Orange — VPN SSL port 10443, portail captif Ucopia, Wi-Fi OmniAccess Stellar</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="false" data-entreprise="true">
+          <span class="ac-code-badge">AC21.05</span>
+          <span class="ac-title-text">Identifier les réseaux opérateurs et l'architecture d'Internet</span>
+          <span class="ac-ctx-text">Orange IPS — FTTH, soudures fibre, réflectomètre, ADSL, DECT</span>
+          <div class="ac-badges"><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC21.06</span>
+          <span class="ac-title-text">Travailler en équipe pour développer ses compétences professionnelles</span>
+          <span class="ac-ctx-text">Orange DTOF/IPS — Missions terrain, coordination client, comptes rendus</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
       </div>
     </div>
+
+    <!-- RT2 -->
+    <div class="ac-bloc reveal">
+      <div class="ac-bloc-header">
+        <span class="bloc-badge rt">RT2</span>
+        <div><h3>Connecter les entreprises et les usagers</h3><span class="bloc-subtitle">Niveau 2 — Maîtriser les solutions de connexion</span></div>
+        <div class="bloc-score"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><span>4/4</span></div>
+      </div>
+      <div class="ac-list">
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC22.01</span>
+          <span class="ac-title-text">Déployer et caractériser des systèmes de transmissions complexes</span>
+          <span class="ac-ctx-text">SAÉ 3.01 LoRaWAN ESP32 + Orange FTTH soudures optiques, dBm</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row justified" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC22.02</span>
+          <span class="ac-title-text">Mettre en place un accès distant sécurisé</span>
+          <span class="ac-ctx-text">SAÉ 4.01 Bastion Guacamole (RDP/SSH Docker) + Orange VPN SSL LDAP</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC22.03</span>
+          <span class="ac-title-text">Mettre en place une connexion multi-site via un réseau opérateur</span>
+          <span class="ac-ctx-text">SAÉ Cyber.03 — OSPF R1 ↔ routeur enseignant (simulation inter-sites)</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="false" data-entreprise="true">
+          <span class="ac-code-badge">AC22.04</span>
+          <span class="ac-title-text">Administrer les réseaux d'accès des opérateurs</span>
+          <span class="ac-ctx-text">Orange IPS — Jarretières PB/PBO/PM, tests ADSL/DECT, répartiteur central</span>
+          <div class="ac-badges"><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC22.05</span>
+          <span class="ac-title-text">Capacité à questionner un cahier des charges R&T</span>
+          <span class="ac-ctx-text">Orange — Analyse CDC client entreprise (segmentation, VPN, Wi-Fi, traçabilité)</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RT3 -->
+    <div class="ac-bloc reveal">
+      <div class="ac-bloc-header">
+        <span class="bloc-badge rt">RT3</span>
+        <div><h3>Créer des outils et des applications informatiques</h3><span class="bloc-subtitle">Niveau 2 — Développer une application R&T</span></div>
+        <div class="bloc-score"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div><span>2/4</span></div>
+      </div>
+      <div class="ac-list">
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC23.01</span>
+          <span class="ac-title-text">Automatiser l'administration système avec des scripts</span>
+          <span class="ac-ctx-text">SAÉ 3.03 PowerShell OUs/AD + R4cyber11 CLI Cisco port-security</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row justified" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC23.02</span>
+          <span class="ac-title-text">Développer une application à partir d'un cahier des charges (Web/Mobile)</span>
+          <span class="ac-ctx-text">SAÉ 3.02 Android Java TCP/UDP NetworkManager + SAÉ 3.01 app GPS LoRaWAN</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC23.03</span>
+          <span class="ac-title-text">Utiliser un protocole réseau pour programmer une application client/serveur</span>
+          <span class="ac-ctx-text">SAÉ 3.02 — Sockets TCP/UDP, NetworkManager.java, test Hercules</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC23.04</span>
+          <span class="ac-title-text">Installer, administrer un système de gestion de données</span>
+          <span class="ac-ctx-text">SAÉ 4.01 MariaDB Docker Compose (Guacamole) + PostgreSQL ChirpStack</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="false">
+          <span class="ac-code-badge">AC23.05</span>
+          <span class="ac-title-text">Accéder à un ensemble de données depuis une application et/ou un site web</span>
+          <span class="ac-ctx-text">SAÉ 3.01 — Webhook ChirpStack → Datacake, décodeur GPS JavaScript</span>
+          <div class="ac-badges"><span class="badge-c">C</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CYBER1 -->
+    <div class="ac-bloc reveal">
+      <div class="ac-bloc-header">
+        <span class="bloc-badge cyber">C1</span>
+        <div><h3>Administrer un système d'information sécurisé</h3><span class="bloc-subtitle">Niveau 1 — Sensibiliser aux vulnérabilités et aux remédiations</span></div>
+        <div class="bloc-score"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><span>4/4</span></div>
+      </div>
+      <div class="ac-list">
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC24.01<sup>Cyber</sup></span>
+          <span class="ac-title-text">Connaître et utiliser les bonnes pratiques de cybersécurité</span>
+          <span class="ac-ctx-text">Orange — ANSSI, OWASP, CERT-FR, bypass SSL + SAÉ 3.03 GPO sécurité AD</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
+        <div class="ac-item-row justified" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC24.02<sup>Cyber</sup></span>
+          <span class="ac-title-text">Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure</span>
+          <span class="ac-ctx-text">Orange — Stormshield SN210 (OUT/IN/DMZ, NAT, IPS) + switch Alcatel VLAN</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC24.03<sup>Cyber</sup></span>
+          <span class="ac-title-text">Sécuriser les services</span>
+          <span class="ac-ctx-text">Orange — VPN SSL, Ucopia portail captif RGPD, IPS + SAÉ 3.03 RADIUS WPA2-Ent.</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="false" data-entreprise="true">
+          <span class="ac-code-badge">AC24.04<sup>Cyber</sup></span>
+          <span class="ac-title-text">Choisir les outils cryptographiques adaptés au besoin</span>
+          <span class="ac-ctx-text">Orange — WPA2 AES-CCMP, inspection SSL/TLS Stormshield, bypass sites sensibles</span>
+          <div class="ac-badges"><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC24.05<sup>Cyber</sup></span>
+          <span class="ac-title-text">Connaître les différents types d'attaque</span>
+          <span class="ac-ctx-text">SAÉ Cyber.04 Kioptrix + Orange test Kali (nmap, brute force SSH, MITRE ATT&amp;CK)</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="false" data-entreprise="true">
+          <span class="ac-code-badge">AC24.06<sup>Cyber</sup></span>
+          <span class="ac-title-text">Comprendre des documents techniques en anglais</span>
+          <span class="ac-ctx-text">Orange — Stormshield doc (EN), RFC 7301 ALPN, MITRE ATT&amp;CK, guides Wazuh</span>
+          <div class="ac-badges"><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CYBER2 -->
+    <div class="ac-bloc reveal">
+      <div class="ac-bloc-header">
+        <span class="bloc-badge cyber">C2</span>
+        <div><h3>Surveiller un système d'information sécurisé</h3><span class="bloc-subtitle">Niveau 1 — Outils de surveillance et de test</span></div>
+        <div class="bloc-score"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><span>3/4</span></div>
+      </div>
+      <div class="ac-list">
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC25.01<sup>Cyber</sup></span>
+          <span class="ac-title-text">Administrer les protections contre les logiciels malveillants</span>
+          <span class="ac-ctx-text">Orange — Wazuh SIEM (syslog Stormshield, MITRE ATT&amp;CK) + SAÉ 4CYBER1 Fortinet</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div></div>
+        </div>
+        <div class="ac-item-row" data-cours="true" data-entreprise="true">
+          <span class="ac-code-badge">AC25.02<sup>Cyber</sup></span>
+          <span class="ac-title-text">Prendre en main des outils de test de pénétration réseau/système</span>
+          <span class="ac-ctx-text">SAÉ Cyber.04 Kioptrix Metasploit + Orange Kali Linux nmap, brute force SSH</span>
+          <div class="ac-badges"><span class="badge-c">C</span><span class="badge-e">E</span></div>
+          <div class="ac-level-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot dim"></div><div class="dot dim"></div></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -125,7 +322,10 @@
           <div class="ac-item"><span class="ac-code">AC22.01</span><span class="ac-desc">Déployer et caractériser des systèmes de transmissions complexes</span><span class="ac-dots l3">●●●○</span></div>
           <div class="ac-item"><span class="ac-code">AC23.03</span><span class="ac-desc">Utiliser un protocole réseau pour programmer une application</span><span class="ac-dots l2">●●○○</span></div>
         </div>
-        <a href="https://docs.google.com/document/d/1MgUUfvUFqw0H5hj0KURrQHrVmB_AgpHxInJs1cFbogM/edit" class="proof-btn" target="_blank" rel="noopener">Voir le compte-rendu →</a>
+        <div class="doc-extract">
+          <div class="doc-extract-label">Rapport SAÉ 3.01 — ESP32 LoRaWAN · TTN · Datacake</div>
+          <iframe src="https://docs.google.com/document/d/1MgUUfvUFqw0H5hj0KURrQHrVmB_AgpHxInJs1cFbogM/preview" class="doc-embed-frame" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="sae-card reveal">
@@ -140,38 +340,30 @@
           <div class="ac-item"><span class="ac-code">AC23.02</span><span class="ac-desc">Développer une application à partir d'un cahier des charges (web/mobile)</span><span class="ac-dots l3">●●●○</span></div>
           <div class="ac-item"><span class="ac-code">AC23.03</span><span class="ac-desc">Utiliser un protocole réseau pour programmer une application client/serveur</span><span class="ac-dots l3">●●●○</span></div>
         </div>
-        <a href="https://drive.google.com/file/d/1pcZlFTsjDrdSSnRKjPv4AQwuVcnngjKK/view" class="proof-btn" target="_blank" rel="noopener">Voir le compte-rendu →</a>
-      </div>
-
-      <div class="sae-card reveal">
-        <div class="sae-number">SAÉ Cyber.03</div>
-        <h3>Réseau informatique sécurisé multi-sites</h3>
-        <p>Configuration OSPFv2 sur routeurs Cisco R1 et R2, encapsulation 802.1Q VLAN 34. Déploiement de VMs sur VMware vCenter : deux serveurs Windows Server 2016 (DNS primaire/secondaire) et un client Windows 10 en provisionnement dynamique.</p>
-        <div class="sae-tags">
-          <span>OSPFv2</span><span>Cisco</span><span>VMware vCenter</span><span>VLAN 802.1Q</span><span>DNS</span>
+        <div class="doc-extract">
+          <div class="doc-extract-label">Rapport SAÉ 3.02 — Application Android Java TCP/UDP</div>
+          <iframe src="https://docs.google.com/document/d/1Ol4ZXvQOUKDfNqp80VDFrwxLx7a6n_cvdugZyzh2EbY/preview" class="doc-embed-frame" allowfullscreen></iframe>
         </div>
-        <div class="ac-eval">
-          <p class="ac-eval-title">Apprentissages critiques travaillés</p>
-          <div class="ac-item"><span class="ac-code">AC21.01</span><span class="ac-desc">Configurer et dépanner le routage dynamique dans un réseau</span><span class="ac-dots l3">●●●○</span></div>
-          <div class="ac-item"><span class="ac-code">AC21.03</span><span class="ac-desc">Déployer des postes clients et des solutions virtualisées</span><span class="ac-dots l2">●●○○</span></div>
-          <div class="ac-item"><span class="ac-code">AC24.02Cyber</span><span class="ac-desc">Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure</span><span class="ac-dots l2">●●○○</span></div>
-        </div>
-        <a href="https://docs.google.com/presentation/d/1scPNW1UbaVOFlgaOZoaNdR2JIejEyPu36t73jNDUKeI/edit" class="proof-btn" target="_blank" rel="noopener">Voir la présentation →</a>
       </div>
 
       <div class="sae-card reveal">
         <div class="sae-number">SAÉ Cyber.04</div>
         <h3>Découverte du pentesting</h3>
-        <p>Pentest guidé sur Kioptrix Level 1. Reconnaissance Nmap, exploitation de vulnérabilités Samba/OpenSSL via Metasploit, post-exploitation et tentatives d'escalade de privilèges Linux. Pratique en lien avec ma passion pour les CTF.</p>
+        <p>Pentest guidé sur la machine virtuelle Kioptrix Level 1 selon la méthodologie complète : reconnaissance passive et active (Nmap -sV -A, détection de services), identification de vulnérabilités connues sur des services legacy (Samba CVE-2003-0201, OpenSSL/mod_ssl CVE-2002-0082), exploitation via les modules Metasploit <code>trans2open</code> et <code>OpenFuck</code>, puis phase de post-exploitation.</p>
+        <p>L'escalade de privilèges Linux a représenté le vrai défi intellectuel de cette SAÉ — elle exige une connaissance fine des mécanismes internes du système (SUID, cron, kernel exploits). Projet directement en lien avec ma pratique régulière des CTF (HackTheBox, TryHackMe).</p>
         <div class="sae-tags">
-          <span>Nmap</span><span>Metasploit</span><span>Kioptrix</span><span>CVE</span><span>Linux</span><span>CTF</span>
+          <span>Kali Linux</span><span>Nmap</span><span>Metasploit</span><span>Kioptrix</span><span>CVE-2003-0201</span><span>CVE-2002-0082</span><span>Escalade de privilèges</span><span>CTF</span>
         </div>
         <div class="ac-eval">
           <p class="ac-eval-title">Apprentissages critiques travaillés</p>
-          <div class="ac-item"><span class="ac-code">AC24.05Cyber</span><span class="ac-desc">Connaître les différents types d'attaque</span><span class="ac-dots l3">●●●○</span></div>
-          <div class="ac-item"><span class="ac-code">AC25.02Cyber</span><span class="ac-desc">Prendre en main des outils de test de pénétration réseau/système</span><span class="ac-dots l2">●●○○</span></div>
+          <div class="ac-item"><span class="ac-code">AC24.05<sup>Cyber</sup></span><span class="ac-desc">Connaître les différents types d'attaque</span><span class="ac-dots l3">●●●○</span></div>
+          <div class="ac-item"><span class="ac-code">AC25.02<sup>Cyber</sup></span><span class="ac-desc">Prendre en main des outils de test de pénétration réseau/système</span><span class="ac-dots l2">●●○○</span></div>
+          <div class="ac-item"><span class="ac-code">AC24.01<sup>Cyber</sup></span><span class="ac-desc">Connaître et utiliser les bonnes pratiques de cybersécurité</span><span class="ac-dots l2">●●○○</span></div>
         </div>
-        <a href="https://docs.google.com/document/d/199v1qNuhmFC2SvMIWxR_UzS3ZtVlNhPXGb7gKA8yLvY/edit" class="proof-btn" target="_blank" rel="noopener">Voir le compte-rendu →</a>
+        <div class="doc-extract">
+          <div class="doc-extract-label">Compte rendu SAÉ Cyber.04 — Pentesting Kioptrix Level 1</div>
+          <iframe src="https://docs.google.com/document/d/199v1qNuhmFC2SvMIWxR_UzS3ZtVlNhPXGb7gKA8yLvY/preview" class="doc-embed-frame" allowfullscreen></iframe>
+        </div>
       </div>
 
     </div>
@@ -179,16 +371,16 @@
 </section>
 
 <!-- ALTERNANCE S4 -->
-<section id="s4">
+<section id="s4" class="section-orange">
   <div class="container">
-    <span class="section-tag reveal">04 — Semestre 4</span>
-    <h2 class="section-title reveal">Alternance — Orange</h2>
+    <span class="section-tag reveal orange-tag">04 — Semestre 4</span>
+    <h2 class="section-title reveal">Alternance — <span class="orange-brand">Orange</span></h2>
     <p class="alt-intro reveal">En alternance chez <strong>Orange</strong>, j'ai déployé et administré des solutions de sécurité réseau professionnelles en environnement de production, sur des équipements Stormshield, Alcatel-Lucent et Cisco.</p>
 
     <div class="mission-list">
 
-      <div class="mission-card reveal">
-        <div class="mission-num">01</div>
+      <div class="mission-card reveal orange-card">
+        <div class="mission-num orange-num">01</div>
         <div class="mission-content">
           <h3>Segmentation VLAN &amp; Filtrage Stormshield SN210</h3>
           <p>Configuration du switch Alcatel avec VLAN 101 (employés) et VLAN 102 (visiteurs). Création de profils de filtrage URL (URLFilter_00) et SSL (SSLFilter_00) sur le pare-feu Stormshield SN210 — blocage des catégories à risque, bypass des sites bancaires/santé. Diagnostic et résolution d'un blocage ALPN causé par l'IPS en dupliquant le profil IPS_02.</p>
@@ -201,14 +393,13 @@
             <div class="ac-item"><span class="ac-code">AC24.02Cyber</span><span class="ac-desc">Mettre en œuvre les outils fondamentaux de sécurisation d'infrastructure</span><span class="ac-dots l4">●●●●</span></div>
             <div class="ac-item"><span class="ac-code">AC24.03Cyber</span><span class="ac-desc">Sécuriser les services</span><span class="ac-dots l3">●●●○</span></div>
           </div>
-          <a href="https://drive.google.com/file/d/1WrLaNLIoHCAvO5vNbSrOe1elIvndGDdA/view" class="proof-btn" target="_blank" rel="noopener">Rapport Stormshield →</a>
         </div>
       </div>
 
-      <div class="mission-card reveal">
-        <div class="mission-num">02</div>
+      <div class="mission-card reveal orange-card">
+        <div class="mission-num orange-num">02</div>
         <div class="mission-content">
-          <h3>VPN SSL, Portail captif Ucopia &amp; Wi-Fi OmniAccess Stellar</h3>
+          <h3>VPN SSL, Portail captif Ucopia &amp; Wi-Fi</h3>
           <p>Déploiement d'un VPN SSL avec authentification LDAP sur port 10443 (Stormshield). Mise en place du portail captif Ucopia pour visiteurs avec traçabilité légale. Configuration de deux SSID Wi-Fi (Employés WPA2 VLAN 101 / Visiteurs VLAN 102) sur AP OmniAccess Stellar. Résolution d'un problème NAT côté DMZ via analyse croisée des logs Ucopia/Stormshield.</p>
           <div class="sae-tags">
             <span>VPN SSL</span><span>LDAP</span><span>Ucopia</span><span>Portail captif</span><span>WPA2</span><span>OmniAccess</span>
@@ -219,37 +410,25 @@
             <div class="ac-item"><span class="ac-code">AC22.02</span><span class="ac-desc">Mettre en place un accès distant sécurisé</span><span class="ac-dots l4">●●●●</span></div>
             <div class="ac-item"><span class="ac-code">AC24.03Cyber</span><span class="ac-desc">Sécuriser les services</span><span class="ac-dots l3">●●●○</span></div>
           </div>
-          <a href="https://docs.google.com/document/d/1svvUfT70StDPtJuL5X6WfSHS12Dj7sIV_sPZ6Tc7O9M/edit" class="proof-btn" target="_blank" rel="noopener">Rapport d'alternance →</a>
-        </div>
-      </div>
-
-      <div class="mission-card reveal">
-        <div class="mission-num">03</div>
-        <div class="mission-content">
-          <h3>Routage dynamique OSPFv2 — Cisco R1 &amp; R2</h3>
-          <p>Configuration OSPFv2 sur deux routeurs Cisco (R1 et R2) en environnement Orange pour assurer la connectivité du réseau collaborateur (172.32.94.0/24). R2 en sous-interface avec encapsulation 802.1Q VLAN 34. Débogage avec show ip ospf neighbor et show ip route ospf en conditions de production.</p>
-          <div class="sae-tags">
-            <span>OSPFv2</span><span>Cisco IOS</span><span>802.1Q</span><span>Sous-interfaces</span><span>Routage dynamique</span>
-          </div>
-          <div class="ac-eval">
-            <p class="ac-eval-title">Apprentissages critiques travaillés</p>
-            <div class="ac-item"><span class="ac-code">AC21.01</span><span class="ac-desc">Configurer et dépanner le routage dynamique dans un réseau</span><span class="ac-dots l4">●●●●</span></div>
-            <div class="ac-item"><span class="ac-code">AC22.03</span><span class="ac-desc">Mettre en place une connexion multi-site via réseau opérateur</span><span class="ac-dots l3">●●●○</span></div>
-          </div>
-          <a href="https://docs.google.com/document/d/1svvUfT70StDPtJuL5X6WfSHS12Dj7sIV_sPZ6Tc7O9M/edit" class="proof-btn" target="_blank" rel="noopener">Rapport d'alternance →</a>
         </div>
       </div>
 
     </div>
+
+    <div class="doc-extract orange-extract reveal">
+      <div class="doc-extract-label orange-doc-label">Rapport_Alternance_Final_v2 — Orange DTOF · DI2E · S4 2025–2026</div>
+      <iframe src="https://docs.google.com/document/d/1Ax_fjLUR98ASaUi3cLvBKjZlGbcrHi8fpxKIY-gw6ks/preview" class="doc-embed-frame doc-embed-tall" allowfullscreen></iframe>
+    </div>
+
   </div>
 </section>
+
+
 
 <!-- ANALYSES REFLEXIVES -->
 <section id="reflexive">
   <div class="container">
     <span class="section-tag reveal">05 — Analyses réflexives</span>
-    <h2 class="section-title reveal">Modèle de Gibbs</h2>
-    <p class="gibbs-intro reveal">Démarche réflexive en 6 étapes : ① Description &nbsp;→&nbsp; ② Sentiments &nbsp;→&nbsp; ③ Évaluation &nbsp;→&nbsp; ④ Analyse &nbsp;→&nbsp; ⑤ Conclusion &nbsp;→&nbsp; ⑥ Plan d'action</p>
 
     <!-- SAE3.01 -->
     <div class="accordion reveal">
@@ -362,60 +541,6 @@
     </div>
 
     <!-- SAE3.Cyber.03 -->
-    <div class="accordion reveal">
-      <div class="accordion-header">
-        <span class="acc-tag">SAÉ Cyber.03</span>
-        <h3>Réseau sécurisé multi-sites — OSPF &amp; VMware vCenter</h3>
-        <span class="acc-arrow">↓</span>
-      </div>
-      <div class="accordion-body">
-        <div class="gibbs-steps">
-          <div class="step">
-            <span class="step-num">①</span>
-            <div>
-              <h4>Description</h4>
-              <p>Configuration du protocole OSPFv2 sur deux routeurs Cisco (R1 et R2) pour assurer la connectivité entre le réseau collaborateur (172.32.94.0/24) et le switch enseignant. R2 utilisait une sous-interface avec encapsulation 802.1Q pour le VLAN 34. Déploiement parallèle de VMs sur VMware vCenter (clusters esx6-8) : deux Windows Server 2016 (DNS primaire/secondaire) et un client Windows 10 en provisionnement dynamique sur un datastore de 150 Go.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">②</span>
-            <div>
-              <h4>Sentiments</h4>
-              <p>Satisfaite d'avoir réussi la convergence OSPF après plusieurs itérations. Déstabilisée au départ par la syntaxe des masques inverses et l'interface vCenter que je découvrais pour la première fois. Intimidée par la gestion des ressources partagées entre étudiants sur l'infrastructure VMware de l'IUT.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">③</span>
-            <div>
-              <h4>Évaluation</h4>
-              <p>Convergence OSPF atteinte avec succès — vérifiée via <code>show ip ospf neighbor</code> et <code>show ip route ospf</code>. La principale difficulté : la configuration précise de l'encapsulation dot1q sur la sous-interface R2 et les annonces correctes des réseaux en zone 0. Côté VMware, la gestion de l'espace disque limité a contraint à respecter strictement les règles de nommage.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">④</span>
-            <div>
-              <h4>Analyse</h4>
-              <p>Mobilisation des connaissances OSPF (zones, processus, masques inverses, LSA type 1/2), sous-interfaces Cisco 802.1Q, commandes de vérification IOS. Côté VMware : vCenter, modèles de VM, provisionnement dynamique vs statique, gestion des datastores partagés, Windows Server 2016 (rôle DNS).</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">⑤</span>
-            <div>
-              <h4>Conclusion</h4>
-              <p>Compris le fonctionnement des protocoles à état de liens (LSA flooding, convergence, DR/BDR). La commande <code>show ip ospf neighbor</code> est la clé du débogage OSPF. Appris la valeur du provisionnement dynamique VMware pour optimiser l'espace et accélérer les déploiements répétitifs.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">⑥</span>
-            <div>
-              <h4>Plan d'action</h4>
-              <p>Pratiquer OSPF multi-zones et la redistribution entre protocoles (OSPF ↔ EIGRP) sur GNS3/EVE-NG. Explorer Docker et Proxmox comme alternatives open-source à VMware. Approfondir OSPFv3 pour IPv6 et les mécanismes d'authentification MD5/SHA entre voisins OSPF.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- SAE3.Cyber.04 -->
     <div class="accordion reveal">
       <div class="accordion-header">
@@ -581,61 +706,6 @@
       </div>
     </div>
 
-    <!-- Alternance Mission 3 -->
-    <div class="accordion reveal">
-      <div class="accordion-header">
-        <span class="acc-tag">Alternance · Mission 3</span>
-        <h3>Routage dynamique OSPFv2 — Cisco R1 &amp; R2</h3>
-        <span class="acc-arrow">↓</span>
-      </div>
-      <div class="accordion-body">
-        <div class="gibbs-steps">
-          <div class="step">
-            <span class="step-num">①</span>
-            <div>
-              <h4>Description</h4>
-              <p>Configuration du protocole OSPFv2 sur deux routeurs Cisco (R1 et R2) en environnement Orange pour assurer la connectivité du réseau collaborateur (172.32.94.0/24) avec le réseau de l'entreprise. R2 configuré avec une sous-interface et encapsulation 802.1Q pour le VLAN 34. Mission réalisée en conditions de production, avec contrainte de disponibilité de service.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">②</span>
-            <div>
-              <h4>Sentiments</h4>
-              <p>Satisfaite d'appliquer des compétences acquises à l'IUT dans un environnement professionnel réel. Légèrement déstabilisée par la syntaxe des masques inverses et la configuration des sous-interfaces VLAN sur routeur Cisco en conditions de production — où l'erreur a des conséquences immédiates.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">③</span>
-            <div>
-              <h4>Évaluation</h4>
-              <p>La convergence OSPF a été atteinte avec succès. La principale difficulté : la configuration précise de l'encapsulation dot1q sur la sous-interface de R2 et les annonces correctes des réseaux dans la zone 0, le tout en environnement de production avec une tolérance aux pannes quasi nulle.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">④</span>
-            <div>
-              <h4>Analyse</h4>
-              <p>Application des connaissances OSPF (zones, processus, masques inverses, annonces réseau), sous-interfaces Cisco 802.1Q et commandes de vérification (show ip ospf neighbor, show ip route ospf, debug ip ospf events) dans un contexte où chaque commande doit être réfléchie avant exécution.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">⑤</span>
-            <div>
-              <h4>Conclusion</h4>
-              <p>Configurer OSPF en production diffère fondamentalement du labo : la tolérance aux erreurs est quasi nulle et l'impact est immédiat sur les utilisateurs. La maîtrise des masques inverses est non négociable. Le réflexe "vérifier avant de valider" est une compétence professionnelle à part entière.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span class="step-num">⑥</span>
-            <div>
-              <h4>Plan d'action</h4>
-              <p>Pratiquer OSPF multi-zones et la redistribution entre protocoles (OSPF ↔ EIGRP/BGP) sur GNS3. Approfondir OSPFv3 pour IPv6 et les mécanismes d'authentification des voisins (MD5/SHA). Explorer les architectures SD-WAN qui s'appuient sur OSPF comme protocole de routage sous-jacent.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -754,7 +824,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>Kawthar LAKHR &nbsp;·&nbsp; Portfolio BUT R&T Cybersécurité &nbsp;·&nbsp; 2026</p>
+  <p>Kawtar LAKHR &nbsp;·&nbsp; Portfolio BUT R&T Cybersécurité &nbsp;·&nbsp; 2026</p>
 </footer>
 
 <div id="cursor"></div>
