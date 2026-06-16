@@ -440,13 +440,11 @@ section { padding: 9rem 0; }
 .sae-card:hover { background: #0e0e0e; }
 .sae-card:hover::after { opacity: 1; }
 
-/* Last card alone on its row → center it */
+/* Last card alone on its row → center it, identical style to siblings */
 .sae-card:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   justify-self: center;
   width: calc(50% - 0.5px);
-  border-top: 2px solid rgba(130, 80, 220, 0.5);
-  box-shadow: 0 -2px 40px rgba(110, 60, 200, 0.12);
 }
 
 .sae-number {
